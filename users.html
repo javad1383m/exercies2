@@ -12,13 +12,13 @@
 </head>
 <body>
     <!-- navbar sevtion ------------start---------- -->
-    <nav class="white  z-depth-0">
+    <nav class="white z-depth-0 top_navbar">
         <div class="nav-wrapper">
-          <a href="#!" class="blue-text hide-on-med-and-up">Home</a>
+          <a href="#" class="blue-text hide-on-med-and-up">Users Manager</a>
           <a href="#" data-target="mobile-demo" class="sidenav-trigger blue-text"><i class="material-icons">menu</i></a>
           <ul class="hide-on-med-and-down">
             <li><a href="/" class="blue-text">Home</a></li>
-            <li><a href="/" class="blue-text">User Management</a></li>
+            <li><a href="users.html" class="blue-text">User Management</a></li>
             <li><a href="https://codeyad.com" class="blue-text">Codeyad</a></li>
             <li><a href="/" class="blue-text">AQ fast learn</a></li>
           </ul>
@@ -42,20 +42,38 @@
         <li><a class="subheader">Subheader</a></li>
         <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
       </ul> 
-      <!-- navbar sevtion ------------end---------- -->
+      <!-- navbar section ------------end---------- -->
 
 
-      <!-- home sevtion ------------start---------- -->
-      <section class="flex-c-m flex-col sizefull p-r-20 p-l-20 p-t-100">
-        <img src="assests/images/codeyad.png" alt="" class="w-full max-w-200 filter_shadow">
-        <a class="waves-effect waves-light btn blue darken-3 w-full max-w-250 m-t-10 mb-10 rounded_pill">programming tutorial</a>
-        <a href="users.html" class="waves-effect waves-light btn blue darken-3 w-full max-w-250 m-t-10 mb-10 rounded_pill">users manager</a>
+      <!-- content section ------------start---------- -->
+
+      <section id="top_actions_section">
+       <!-- --add button------------- -->
+       <div class="p-l-10 p-r-10 p-t-10">
+        <button class="waves-effect waves-light btn blue darken-2 p-l-30 p-r-30 w-full flex-c">
+          <i class="material-icons m-r-5">add</i>
+          Add User
+        </button>
+       </div>
+
+       <!-- ------------search section---------- -->
+       <div class="row">
+        <div class="input-field col s12">
+          <input id="search" type="text" class="validate">
+          <label for="search">
+            <i class="material-icons pos-relative top-7">search</i>
+            Search
+          </label>
+        </div>
       </section>
 
+      <!-- content section ------------start---------- -->
 
 
-    </body>
-<script src="assests/js/app.js"></script>
+
+      <script src="assests/js/app.js"></script>
       
       <script src="assests/materialize/js/materialize.min.js"></script>
+    </body>
+
 </html>
