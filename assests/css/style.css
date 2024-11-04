@@ -8,13 +8,27 @@
     flex-direction: column;
     align-items: center;
 }
-.fort{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: xx-large;
-}
-
 @media(min-width:600px){
     .top_navbar{
         box-shadow:0 0 50px gray !important;
     }
+    #top_actions_section{
+        display: flex;
+        align-items: center;
+    }
 }
+/* .users_list_item .users_list_arrow_icon{
+    transition: all 200ms ease;
+} */
+
+.users_list_item.active .users_list_arrow_icon{
+    transform: rotate(180deg);
+}
+
+.users_list_item.active , .users_list_item.active .collapsible-header{
+    background-color: rgba(190, 185, 185, 0.322);
+ } 
+
+table.highlight > tbody > tr:hover {
+    background-color: rgba(25, 93, 241, 0.5);
+  }
